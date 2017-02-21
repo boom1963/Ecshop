@@ -259,7 +259,7 @@ function selectPage(sel)
       <div> {$lang.icp_number}:<a href="http://www.miibeian.gov.cn/" target="_blank">{$icp_number}</a> </div>
       <!-- 结束ICP 证书{/if} -->
       {insert name='query_info'}<br />
-      <a href="http://www.ecshop.com" target="_blank" style="font-size:10px">Powered by <strong><span style="color: #3366FF">ECSHOP</span> <span style="color: #FF9966">{$ecs_version}</span></strong></a><br />
+      <a href="http://www.ecshop.com" target="_blank" style="font-size:10px">Powered by <strong><span style="color: #3366FF"></span> <span style="color: #FF9966">{$ecs_version}</span></strong></a><br />
     </td>
   </tr>
 </table>
