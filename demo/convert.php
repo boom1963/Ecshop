@@ -258,7 +258,7 @@ function instheader() {
 function instfooter() {
     echo "</td></tr><tr><td><hr noshade align=\"center\" width=\"100%\" size=\"1\"></td></tr>".
             "<tr><td align=\"center\">".
-                "<b style=\"font-size: 11px\">Powered by <a href=\"http://www.nmgcbjss.com\" target=\"_blank\"><span style=\"color:#FF6100\">ECShop</span>".
+                "<b style=\"font-size: 11px\">Powered by <a href=\"http://www.ecshop.com\" target=\"_blank\"><span style=\"color:#FF6100\">ECShop</span>".
               "</a></b>&nbsp; &copy; 2005-2011 涓婃捣鍟嗘淳缃戠粶绉戞妧鏈夐檺鍏?徃銆侟br /><br />".
               "</td></tr></table></td></tr></table>".
         "</body></html>";

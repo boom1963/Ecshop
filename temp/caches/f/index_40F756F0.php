@@ -1,15 +1,15 @@
-<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:47:"C:/xampp/htdocs/ecshop/themes/default/index.dwt";i:1;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/page_header.lbi";i:2;s:54:"C:/xampp/htdocs/ecshop/themes/default/library/cart.lbi";i:3;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/category_tree.lbi";i:4;s:55:"C:/xampp/htdocs/ecshop/themes/default/library/top10.lbi";i:5;s:64:"C:/xampp/htdocs/ecshop/themes/default/library/promotion_info.lbi";i:6;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/order_query.lbi";i:7;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/invoice_query.lbi";i:8;s:59:"C:/xampp/htdocs/ecshop/themes/default/library/vote_list.lbi";i:9;s:60:"C:/xampp/htdocs/ecshop/themes/default/library/email_list.lbi";i:10;s:58:"C:/xampp/htdocs/ecshop/themes/default/library/index_ad.lbi";i:11;s:62:"C:/xampp/htdocs/ecshop/themes/default/library/new_articles.lbi";i:12;s:69:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:56:"C:/xampp/htdocs/ecshop/themes/default/library/brands.lbi";i:14;s:64:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_best.lbi";i:15;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_new.lbi";i:16;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:57:"C:/xampp/htdocs/ecshop/themes/default/library/auction.lbi";i:18;s:59:"C:/xampp/htdocs/ecshop/themes/default/library/group_buy.lbi";i:19;s:54:"C:/xampp/htdocs/ecshop/themes/default/library/help.lbi";i:20;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1487659451;s:8:"maketime";i:1487655851;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:47:"C:/xampp/htdocs/ecshop/themes/default/index.dwt";i:1;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/page_header.lbi";i:2;s:54:"C:/xampp/htdocs/ecshop/themes/default/library/cart.lbi";i:3;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/category_tree.lbi";i:4;s:55:"C:/xampp/htdocs/ecshop/themes/default/library/top10.lbi";i:5;s:64:"C:/xampp/htdocs/ecshop/themes/default/library/promotion_info.lbi";i:6;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/order_query.lbi";i:7;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/invoice_query.lbi";i:8;s:59:"C:/xampp/htdocs/ecshop/themes/default/library/vote_list.lbi";i:9;s:60:"C:/xampp/htdocs/ecshop/themes/default/library/email_list.lbi";i:10;s:58:"C:/xampp/htdocs/ecshop/themes/default/library/index_ad.lbi";i:11;s:62:"C:/xampp/htdocs/ecshop/themes/default/library/new_articles.lbi";i:12;s:69:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:56:"C:/xampp/htdocs/ecshop/themes/default/library/brands.lbi";i:14;s:64:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_best.lbi";i:15;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_new.lbi";i:16;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:57:"C:/xampp/htdocs/ecshop/themes/default/library/auction.lbi";i:18;s:59:"C:/xampp/htdocs/ecshop/themes/default/library/group_buy.lbi";i:19;s:54:"C:/xampp/htdocs/ecshop/themes/default/library/help.lbi";i:20;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1487657621;s:8:"maketime";i:1487654021;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="Generator" content="ECSHOP v2.7.3" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="JC777" />
-<meta name="Description" content="JC777" />
-<title>JC777 - Powered by www.nmgcbjss.com</title>
+<meta name="Keywords" content="ECSHOP演示站" />
+<meta name="Description" content="ECSHOP演示站" />
+<title>测试网站标题 - Powered by ECShop</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="themes/default/style.css" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|JC777 - Powered by www.nmgcbjss.com" href="feed.php" />
+<link rel="alternate" type="application/rss+xml" title="RSS|测试网站标题 - Powered by ECShop" href="feed.php" />
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></head>
 <body>
 <script type="text/javascript">
@@ -32,7 +32,7 @@ var process_request = "正在处理您的请求...";
 <div id="search"  class="clearfix">
   <div class="keys f_l">
    <script type="text/javascript">
-    
+
     <!--
     function checkSearchForm()
     {
@@ -47,22 +47,23 @@ var process_request = "正在处理您的请求...";
         }
     }
     -->
-    
+
     </script>
       </div>
   <form id="searchForm" name="searchForm" method="get" action="search.php" onSubmit="return checkSearchForm()" class="f_r"  style="_position:relative; top:5px;">
    <select name="category" id="category" class="B_input">
       <option value="0">所有分类</option>
-          </select>
+      <option value="1" >电子产品</option>    </select>
    <input name="keywords" type="text" id="keyword" value="" class="B_input" style="width:110px;"/>
    <input name="imageField" type="submit" value="" class="go" style="cursor:pointer;" />
    <a href="search.php?act=advanced_search">高级搜索</a>
    </form>
-</div><div class="blank"></div>
+</div>
+<div class="blank"></div>
 <div class="block clearfix">
-  
+
   <div class="AreaL">
-    
+
     <div class="box">
      <div class="box_1">
       <h3><span>商店公告</span></h3>
@@ -71,25 +72,28 @@ var process_request = "正在处理您的请求...";
      </div>
     </div>
     <div class="blank5"></div>
-    
-  
+
+
 <div class="cart" id="ECS_CARTINFO">
  554fcae493e564ee0dc75bdf2ebf94cacart_info|a:1:{s:4:"name";s:9:"cart_info";}554fcae493e564ee0dc75bdf2ebf94ca</div>
-<div class="blank5"></div><div class="box">
+<div class="blank5"></div>
+<div class="box">
  <div class="box_1">
   <div id="category_tree">
-     
+
   </div>
  </div>
 </div>
-<div class="blank5"></div><div class="box">
+<div class="blank5"></div>
+<div class="box">
  <div class="box_2">
   <div class="top10Tit"></div>
   <div class="top10List clearfix">
     </div>
  </div>
 </div>
-<div class="blank5"></div><script>var invalid_order_sn = "无效订单号"</script>
+<div class="blank5"></div>
+<script>var invalid_order_sn = "无效订单号"</script>
 <div class="box">
  <div class="box_1">
   <h3><span>订单查询</span></h3>
@@ -104,7 +108,8 @@ var process_request = "正在处理您的请求...";
   </div>
  </div>
 </div>
-<div class="blank5"></div>554fcae493e564ee0dc75bdf2ebf94cavote|a:1:{s:4:"name";s:4:"vote";}554fcae493e564ee0dc75bdf2ebf94ca<div class="box">
+<div class="blank5"></div>
+554fcae493e564ee0dc75bdf2ebf94cavote|a:1:{s:4:"name";s:4:"vote";}554fcae493e564ee0dc75bdf2ebf94ca<div class="box">
  <div class="box_1">
   <h3><span>邮件订阅</span></h3>
   <div class="boxCenterList RelaArticle">
@@ -154,10 +159,10 @@ function check_email()
 }
 </script>
   </div>
-  
-  
+
+
   <div class="AreaR">
-   
+
     <div class="box clearfix">
      <div class="box_1 clearfix">
        <div class="f_l" id="focus">
@@ -165,34 +170,34 @@ function check_email()
   var swf_width=484;
   var swf_height=200;
   </script>
-  <script type="text/javascript" src="data/flashdata/dynfocus/cycle_image.js"></script>
+  <script type="text/javascript" src="data/flashdata/default/cycle_image.js"></script>
        </div>
-       
+
        <div id="mallNews" class="f_r">
         <div class="NewsTit"></div>
         <div class="NewsList tc">
-         
+
         <ul>
 </ul>        </div>
        </div>
-       
+
      </div>
     </div>
     <div class="blank5"></div>
-   
-   
+
+
     <div class="clearfix">
-      
-            
+
+
       <div class="box f_r brandsIe6">
        <div class="box_1 clearfix" id="brands">
                </div>
       </div>
     </div>
     <div class="blank5"></div>
-   
+
   </div>
-  
+
 </div>
 <div class="blank5"></div>
 <div class="block">
@@ -226,12 +231,13 @@ function check_email()
 <div class="blank"></div>
 <div id="footer">
  <div class="text">
- &copy; 2005-2017 JC777 版权所有，并保留所有权利。<br />
+ &copy; Copyright  2016 内蒙古草本聚食品有限责任公司　All Rights <br />
                                                                                      <br />
     554fcae493e564ee0dc75bdf2ebf94caquery_info|a:1:{s:4:"name";s:10:"query_info";}554fcae493e564ee0dc75bdf2ebf94ca<br />
   <a href="http://www.ecshop.com" target="_blank" style=" font-family:Verdana; font-size:11px;">Powered&nbsp;by&nbsp;<strong><span style="color: #3366FF">ECShop</span>&nbsp;<span style="color: #FF9966">v2.7.3</span></strong></a>&nbsp;<a href="http://www.ecshop.com/license.php?product=ecshop_b2c&url=http%3A%2F%2Flocalhost%3A8080%2Fecshop%2F" target="_blank"
 >&nbsp;&nbsp;Licensed</a><br />
         <div align="left"  id="rss"><a href="feed.php"><img src="themes/default/images/xml_rss2.gif" alt="rss" /></a></div>
  </div>
-</div></body>
+</div>
+</body>
 </html>

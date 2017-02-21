@@ -3,7 +3,7 @@
 /**
  * ECSHOP wap前台公共函数
  * ============================================================================
- * * 版权所有 2005-2012 www.nmgcbjss.com
+ * * 版权所有 2005-2012 上海商派网络科技有限公司，并保留所有权利。
  * 网站地址: http://www.ecshop.com；
  * ----------------------------------------------------------------------------
  * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
@@ -94,7 +94,7 @@ function get_footer()
 {
     if (substr($_SERVER['SCRIPT_NAME'], strrpos($_SERVER['SCRIPT_NAME'], '/')) == '/index.php')
     {
-        $footer = "<br/>Powered by www.nmgcbjss.com[".local_date('H:i')."]";
+        $footer = "<br/>Powered by ECShop[".local_date('H:i')."]";
     }
     else
     {
