@@ -1,20 +1,20 @@
 <?php
 // database host
-$db_host   = "mysql119.phy.lolipop.lan";
+$db_host   = "localhost:3306";
 
 // database name
-$db_name   = "LAA0835109-ecshop";
+$db_name   = "mydata";
 
 // database username
-$db_user   = "LAA0835109";
+$db_user   = "root";
 
 // database password
-$db_pass   = "ecshop";
+$db_pass   = "";
 
 // table prefix
 $prefix    = "ecs_";
 
-$timezone    = "Asia/Tokyo";
+$timezone    = "Europe/Berlin";
 
 $cookie_path    = "/";
 
