@@ -54,7 +54,7 @@ function update_user_info()
         {
             $sql="SELECT special_rank from ".$GLOBALS['ecs']->table('user_rank')."where rank_id='$row[user_rank]'";
             if($GLOBALS['db']->getOne($sql)==='0' || $GLOBALS['db']->getOne($sql)===null)
-            {   
+            {
                 $sql="update ".$GLOBALS['ecs']->table('users')."set user_rank='0' where user_id='$_SESSION[user_id]'";
                 $GLOBALS['db']->query($sql);
                 $row['user_rank']=0;
@@ -153,7 +153,7 @@ function assign_ur_here($cat = 0, $str = '')
     }
 
     /* 初始化“页面标题”和“当前位置” */
-    $page_title = $GLOBALS['_CFG']['shop_title'] . ' - ' . 'Powered by ECShop';
+    $page_title = $GLOBALS['_CFG']['shop_title'] . ' - ' . 'Powered by';
     $ur_here    = '<a href=".">' . $GLOBALS['_LANG']['home'] . '</a>';
 
     /* 根据文件名分别处理中间的部分 */
