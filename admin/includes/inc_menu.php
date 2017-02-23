@@ -98,30 +98,30 @@ $modules['10_priv_admin']['agency_list']            = 'agency.php?act=list';
 $modules['10_priv_admin']['suppliers_list']         = 'suppliers.php?act=list'; // 供货商
 
 $modules['11_system']['01_shop_config']             = 'shop_config.php?act=list_edit';
-$modules['11_system']['shop_authorized']             = 'license.php?act=list_edit';
+//$modules['11_system']['shop_authorized']             = 'license.php?act=list_edit';
 $modules['11_system']['02_payment_list']            = 'payment.php?act=list';
 $modules['11_system']['03_shipping_list']           = 'shipping.php?act=list';
 $modules['11_system']['04_mail_settings']           = 'shop_config.php?act=mail_settings';
 $modules['11_system']['05_area_list']               = 'area_manage.php?act=list';
 //$modules['11_system']['06_plugins']                 = 'plugins.php?act=list';
-$modules['11_system']['07_cron_schcron']            = 'cron.php?act=list';
+//$modules['11_system']['07_cron_schcron']            = 'cron.php?act=list'; //计划任务
 $modules['11_system']['08_friendlink_list']         = 'friend_link.php?act=list';
 $modules['11_system']['sitemap']                    = 'sitemap.php';
-$modules['11_system']['check_file_priv']            = 'check_file_priv.php?act=check';
+//$modules['11_system']['check_file_priv']            = 'check_file_priv.php?act=check';
 $modules['11_system']['captcha_manage']             = 'captcha_manage.php?act=main';
 $modules['11_system']['ucenter_setup']              = 'integrate.php?act=setup&code=ucenter';
 $modules['11_system']['flashplay']                  = 'flashplay.php?act=list';
 $modules['11_system']['navigator']                  = 'navigator.php?act=list';
-$modules['11_system']['file_check']                 = 'filecheck.php';
+//$modules['11_system']['file_check']                 = 'filecheck.php';
 //$modules['11_system']['fckfile_manage']             = 'fckfile_manage.php?act=list';
 $modules['11_system']['021_reg_fields']             = 'reg_fields.php?act=list';
 
-
-$modules['12_template']['02_template_select']       = 'template.php?act=list';
-$modules['12_template']['03_template_setup']        = 'template.php?act=setup';
-$modules['12_template']['04_template_library']      = 'template.php?act=library';
-$modules['12_template']['05_edit_languages']        = 'edit_languages.php?act=list';
-$modules['12_template']['06_template_backup']       = 'template.php?act=backup_setting';
+// 模板设定
+//$modules['12_template']['02_template_select']       = 'template.php?act=list';
+//$modules['12_template']['03_template_setup']        = 'template.php?act=setup';
+//$modules['12_template']['04_template_library']      = 'template.php?act=library';
+//$modules['12_template']['05_edit_languages']        = 'edit_languages.php?act=list';
+//$modules['12_template']['06_template_backup']       = 'template.php?act=backup_setting';
 $modules['12_template']['mail_template_manage']     = 'mail_template.php?act=list';
 
 
