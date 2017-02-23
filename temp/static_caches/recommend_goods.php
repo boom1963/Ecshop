@@ -4,11 +4,6 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '2',
-      'sort_order' => '100',
-    ),
-    1 => 
-    array (
       'goods_id' => '1',
       'sort_order' => '100',
     ),
@@ -16,11 +11,6 @@ $data = array (
   'new' => 
   array (
     0 => 
-    array (
-      'goods_id' => '2',
-      'sort_order' => '100',
-    ),
-    1 => 
     array (
       'goods_id' => '1',
       'sort_order' => '100',
@@ -30,19 +20,12 @@ $data = array (
   array (
     0 => 
     array (
-      'goods_id' => '2',
-      'sort_order' => '100',
-    ),
-    1 => 
-    array (
       'goods_id' => '1',
       'sort_order' => '100',
     ),
   ),
   'brand' => 
   array (
-    2 => 'apple',
-    1 => 'apple',
   ),
 );
 ?>
