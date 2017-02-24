@@ -108,7 +108,8 @@ class vbb extends integrate
      *
      * @return void
      */
-    function set_cookie ($username="")
+     //function set_cookie ($username="") // Edit by JimmyChoi 20170224
+     function set_cookie ($username="", $remember = NULL)
     {
         parent::set_cookie($username);
         if (empty($username))

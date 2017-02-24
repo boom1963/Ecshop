@@ -124,7 +124,8 @@ class ucenter extends integrate
      *
      * @return void
      */
-    function login($username, $password)
+    //function login($username, $password) Edit by JimmyChoi 20170224
+    function login($username, $password, $remember = NULL)
     {
         list($uid, $uname, $pwd, $email, $repeat) = uc_call("uc_user_login", array($username, $password));
         $uname = addslashes($uname);
@@ -160,7 +161,7 @@ class ucenter extends integrate
                     $password = $this->compile_password(array('password'=>$password));
                     $this->db->query('INSERT INTO ' . $GLOBALS['ecs']->table("users") . "(`user_id`, `email`, `user_name`, `password`, `reg_time`, `last_login`, `last_ip`) VALUES ('$uid', '$email', '$uname', '$password', '$reg_date', '$reg_date', '$ip')");
                 }
-                else 
+                else
                 {
                     if(empty($result['ec_salt']))
                     {
@@ -207,7 +208,8 @@ class ucenter extends integrate
     }
 
     /*添加用户*/
-    function add_user($username, $password, $email)
+    //function add_user($username, $password, $email) //Edit by JimmyChoi 20170224
+    function add_user($username, $password, $email, $gender = -1, $bday = 0, $reg_date = 0, $md5password = '')
     {
         /* 检测用户名 */
         if ($this->check_user($username))
@@ -458,13 +460,14 @@ class ucenter extends integrate
      *
      * @return void
      */
-    function set_cookie($username='')
+     //function set_cookie ($username="") // Edit by JimmyChoi 20170224
+     function set_cookie ($username="", $remember = NULL)
     {
         if (empty($username))
         {
             /* 摧毁cookie */
             $time = time() - 3600;
-            setcookie("ECS[user_id]",  '', $time, $this->cookie_path);            
+            setcookie("ECS[user_id]",  '', $time, $this->cookie_path);
             setcookie("ECS[password]", '', $time, $this->cookie_path);
         }
         else
