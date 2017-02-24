@@ -12,7 +12,7 @@ if (file_exists($shipping_lang))
 
 /* 模块的基本信息 */
 if (isset($set_modules) && $set_modules == TRUE)
-{    
+{
     $i = (isset($modules)) ? count($modules) : 0;
 
     /* 配送方式插件的代码必须和文件名保持一致 */
@@ -27,10 +27,10 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['cod']     = false;
 
     /* 插件的作者 */
-    $modules[$i]['author']  = 'ECSHOP TEAM';
+    $modules[$i]['author']  = 'BBBank TEAM';
 
     /* 插件作者的官方网站 */
-    $modules[$i]['website'] = 'http://www.ecshop.com';
+    $modules[$i]['website'] = '';
 
     /* 配送接口需要的参数 */
     $modules[$i]['configure'] = array(
@@ -143,9 +143,9 @@ class ems
 
         return $str;
     }
-    
+
     /**
-     * 返回快递100查询链接 by wang 
+     * 返回快递100查询链接 by wang
      * URL：https://code.google.com/p/kuaidi-api/wiki/Open_API_Chaxun_URL
      */
     function kuaidi100($invoice_sn){
