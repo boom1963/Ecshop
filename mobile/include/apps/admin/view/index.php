@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{$lang['cp_home']} - Powered by ECTouch.Cn</title>
+<title>{$lang['cp_home']} - Powered by BBBank</title>
 <meta http-equiv="expires" content="0" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Cache-Control" content="no-cache" />
@@ -85,7 +85,7 @@
 </div>
 <div id="admin_bottom" style="text-align:center; line-height:30px">Copyright &copy; <?php echo date('Y');?> 上海商创网络科技有限公司. All Rights Reserved.</div>
 <div style="clear:both"></div>
-<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script> 
+<script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 function toggleMenu(){
   imgArrow = $('#img');

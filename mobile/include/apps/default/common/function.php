@@ -24,7 +24,7 @@ function is_wechat_browser()
  */
 function get_page_title($cat = 0, $str = '') {
     /* 初始化“页面标题”和“当前位置” */
-    $page_title = C('shop_title') . ' - ' . 'Powered by ECTouch.cn';
+    $page_title = C('shop_title') . ' - ' . 'Powered by BBBank';
     $ur_here = '<a href="' . __APP__ . '">' . L('home') . '</a>';
     /* 控制器名称 */
     $controller_name = strtolower(CONTROLLER_NAME);
@@ -1547,7 +1547,7 @@ function exchange_points($uid, $fromcredits, $tocredits, $toappid, $netamount) {
  * @param  $title 提醒标题
  * @param  $msg 提醒内容
  * @param  $url 页面链接 base64_decode(urldecode($url));
- * @param  $order_id 订单id 
+ * @param  $order_id 订单id
  *
  */
 function send_wechat_message($type = '', $title = '', $msg = '', $url = '', $order_id = '') {
