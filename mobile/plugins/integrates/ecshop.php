@@ -22,9 +22,9 @@ if (isset($set_modules) && $set_modules == TRUE) {
     /* 被整合的第三方程序的版本 */
     $modules[$i]['version'] = '2.0';
     /* 插件的作者 */
-    $modules[$i]['author'] = 'ECSHOP TEAM';
+    $modules[$i]['author'] = 'BBBank TEAM';
     /* 插件作者的官方网站 */
-    $modules[$i]['website'] = 'http://www.ecshop.com';
+    $modules[$i]['website'] = '';
     return;
 }
 
@@ -41,7 +41,7 @@ class ecshop extends integrate
     /**
      * 构造函数
      *
-     * @param unknown $cfg 
+     * @param unknown $cfg
      */
     public function __construct($cfg)
     {
@@ -73,7 +73,7 @@ class ecshop extends integrate
         } else {
             $post_username = $username;
         }
-        
+
         if ($password === null) {
             $condition[$this->field_name] = $post_username;
             return model('Base')->model->table($this->user_table)
@@ -91,7 +91,7 @@ class ecshop extends integrate
             if (empty($row)) {
                 return 0;
             }
-            
+
             if (empty($row['salt'])) {
                 if ($row['password'] != $this->compile_password(array(
                     'password' => $password,
@@ -113,7 +113,7 @@ class ecshop extends integrate
                 /* 如果salt存在，使用salt方式加密验证，验证通过洗白用户密码 */
                 $encrypt_type = substr($row['salt'], 0, 1);
                 $encrypt_salt = substr($row['salt'], 1);
-                
+
                 /* 计算加密后密码 */
                 $encrypt_password = '';
                 switch ($encrypt_type) {
@@ -127,20 +127,20 @@ class ecshop extends integrate
                     case ENCRYPT_UC:
                         $encrypt_password = md5(md5($password) . $encrypt_salt);
                         break;
-                    
+
                     default:
                         $encrypt_password = '';
                 }
-                
+
                 if ($row['password'] != $encrypt_password) {
                     return 0;
                 }
-                
+
                 $sql = "UPDATE " . model('Base')->model->pre . $this->user_table . " SET password = '" . $this->compile_password(array(
                     'password' => $password
                 )) . "', salt=''" . " WHERE user_id = '$row[user_id]'";
                 model('Base')->model->query($sql);
-                
+
                 return $row['user_id'];
             }
         }

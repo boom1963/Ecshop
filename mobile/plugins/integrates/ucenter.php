@@ -22,9 +22,9 @@ if (isset($set_modules) && $set_modules == TRUE) {
     /* 被整合的第三方程序的版本 */
     $modules[$i]['version'] = '1.x';
     /* 插件的作者 */
-    $modules[$i]['author'] = 'ECSHOP TEAM';
+    $modules[$i]['author'] = 'BBBank TEAM';
     /* 插件作者的官方网站 */
-    $modules[$i]['website'] = 'http://www.ecshop.com';
+    $modules[$i]['website'] = '';
     /* 插件的初始的默认值 */
     $modules[$i]['default']['db_host'] = 'localhost';
     $modules[$i]['default']['db_user'] = 'root';
@@ -44,7 +44,7 @@ class ucenter extends integrate
     /**
      * 构造函数
      *
-     * @param unknown $cfg            
+     * @param unknown $cfg
      */
     function __construct($cfg)
     {
@@ -60,7 +60,7 @@ class ucenter extends integrate
         $this->field_reg_date = 'reg_time';
         $this->need_sync = false;
         $this->is_ecshop = 1;
-        
+
         /* 初始化UC需要常量 */
         if (! defined('UC_CONNECT') && isset($cfg['uc_id']) && isset($cfg['db_host']) && isset($cfg['db_user']) && isset($cfg['db_name'])) {
             if (strpos($cfg['db_pre'], '`' . $cfg['db_name'] . '`') === 0) {
@@ -68,7 +68,7 @@ class ucenter extends integrate
             } else {
                 $db_pre = '`' . $cfg['db_name'] . '`.' . $cfg['db_pre'];
             }
-            
+
             define('UC_CONNECT', isset($cfg['uc_connect']) ? $cfg['uc_connect'] : '');
             define('UC_DBHOST', isset($cfg['db_host']) ? $cfg['db_host'] : '');
             define('UC_DBUSER', isset($cfg['db_user']) ? $cfg['db_user'] : '');
@@ -90,8 +90,8 @@ class ucenter extends integrate
      * 用户登录函数
      *
      * @access public
-     * @param string $username            
-     * @param string $password            
+     * @param string $username
+     * @param string $password
      *
      * @return void
      */
@@ -102,7 +102,7 @@ class ucenter extends integrate
             $password
         ));
         $uname = addslashes($uname);
-        
+
         if ($uid > 0) {
             // 检查用户是否存在,不存在直接放入用户表
             $result = model('Base')->model->query("SELECT user_id,ec_salt FROM " . model('Base')->model->pre . "users WHERE user_name='$username'");
@@ -119,7 +119,7 @@ class ucenter extends integrate
                 $user_exist = model('Base')->model->query("SELECT user_id FROM " . model('Base')->model->pre . "users  WHERE user_name='$username' AND password = '" . MD5(MD5($password) . $result['ec_salt']) . "'");
                 $user_exist = $this->getOne($user_exist);
             }
-            
+
             if (empty($user_exist)) {
                 if (empty($name_exist)) {
                     $reg_date = time();
@@ -156,7 +156,7 @@ class ucenter extends integrate
      * 用户退出
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -169,7 +169,7 @@ class ucenter extends integrate
         $this->ucdata = uc_call("uc_user_synlogout"); // 同步退出
         return true;
     }
-    
+
     /* 添加用户 */
     function add_user($username, $password, $email, $gender = -1, $bday = 0, $reg_date = 0, $md5password = '')
     {
@@ -178,7 +178,7 @@ class ucenter extends integrate
             $this->error = ERR_USERNAME_EXISTS;
             return false;
         }
-        
+
         $uid = uc_call("uc_user_register", array(
             $username,
             $password,
@@ -224,7 +224,7 @@ class ucenter extends integrate
      * @access public
      * @param string $username
      *            用户名
-     *            
+     *
      * @return int
      */
     function check_user($username, $password = null)
@@ -245,7 +245,7 @@ class ucenter extends integrate
      * @access public
      * @param string $email
      *            邮箱
-     *            
+     *
      * @return blob
      */
     function check_email($email)
@@ -263,7 +263,7 @@ class ucenter extends integrate
         }
         return true;
     }
-    
+
     /* 编辑用户信息 */
     function edit_user($cfg, $forget_pwd = '0')
     {
@@ -287,7 +287,7 @@ class ucenter extends integrate
             model('Base')->model->query($sql);
             $flag = true;
         }
-        
+
         // 判断 email 是否进行修改
        $data = uc_call("uc_get_user", array(
             $cfg['username'],
@@ -311,24 +311,24 @@ class ucenter extends integrate
                     } elseif ($ucresult == - 4) {
                         // echo 'Email 格式有误';
                         $this->error = ERR_INVALID_EMAIL;
-                        
+
                         return false;
                     } elseif ($ucresult == - 5) {
                         // echo 'Email 不允许注册';
                         $this->error = ERR_INVALID_EMAIL;
-                        
+
                         return false;
                     } elseif ($ucresult == - 6) {
                         // echo '该 Email 已经被注册';
                         $this->error = ERR_EMAIL_EXISTS;
-                        
+
                         return false;
                     } elseif ($ucresult < 0) {
                         return false;
                     }
             }
         }
-        
+
         if (! empty($cfg['old_password']) && ! empty($cfg['password']) && $forget_pwd == 0) {
             $ucresult = uc_call("uc_user_edit", array(
                 $real_username,
@@ -354,7 +354,7 @@ class ucenter extends integrate
                 $flag = true;
             }
         }
-        
+
         return true;
     }
 
@@ -362,7 +362,7 @@ class ucenter extends integrate
      * 获取指定用户的信息
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -381,7 +381,7 @@ class ucenter extends integrate
      * 检查cookie是正确，返回用户名
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -396,7 +396,7 @@ class ucenter extends integrate
      * 根据登录状态设置cookie
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -410,7 +410,7 @@ class ucenter extends integrate
                 $this->sync($id);
             }
             $this->set_session($id);
-            
+
             return true;
         } else {
             return false;
@@ -421,7 +421,7 @@ class ucenter extends integrate
      * 设置cookie
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -437,7 +437,7 @@ class ucenter extends integrate
         } else {
             /* 设置cookie */
             $time = time() + 3600 * 24 * 30;
-            
+
             setcookie("ECS[username]", stripslashes($username), $time, $this->cookie_path, $this->cookie_domain);
             $sql = "SELECT user_id, password FROM " . model('Base')->model->pre . "users WHERE user_name='$username' LIMIT 1";
             $row = model('Base')->model->query($sql);
@@ -453,7 +453,7 @@ class ucenter extends integrate
      * 设置指定用户SESSION
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -467,7 +467,7 @@ class ucenter extends integrate
             $sql = "SELECT user_id, password, email FROM " . model('Base')->model->pre . "users WHERE user_name='$username' LIMIT 1";
             $row = model('Base')->model->query($sql);
             $row = reset($row);
-            
+
             if ($row) {
                 $_SESSION['user_id'] = $row['user_id'];
                 $_SESSION['user_name'] = $username;
@@ -480,7 +480,7 @@ class ucenter extends integrate
      * 获取指定用户的信息
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -503,7 +503,7 @@ class ucenter extends integrate
      * 删除用户
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -519,7 +519,7 @@ class ucenter extends integrate
         } else {
             $post_id = $id;
         }
-        
+
         /* 如果需要同步或是ecshop插件执行这部分代码 */
         $sql = "SELECT user_id FROM " . model('Base')->model->pre . "users  WHERE ";
         $sql .= (is_array($post_id)) ? db_create_in($post_id, 'user_name') : "user_name='" . $post_id . "' LIMIT 1";
@@ -527,7 +527,7 @@ class ucenter extends integrate
         foreach ($array as $key => $val) {
             $col[] = $val[0];
         }
-        
+
         if ($col) {
             $sql = "UPDATE " . model('Base')->model->pre . "users SET parent_id = 0 WHERE " . db_create_in($col, 'parent_id'); // 将删除用户的下级的parent_id 改为0
             model('Base')->model->query($sql);
@@ -540,14 +540,14 @@ class ucenter extends integrate
             foreach ($array as $key => $val) {
                 $col_order_id[] = $val[0];
             }
-            
+
             if ($col_order_id) {
                 $sql = "DELETE FROM " . model('Base')->model->pre . "order_info  WHERE " . db_create_in($col_order_id, 'order_id');
                 model('Base')->model->query($sql);
                 $sql = "DELETE FROM " . model('Base')->model->pre . "order_goods  WHERE " . db_create_in($col_order_id, 'order_id');
                 model('Base')->model->query($sql);
             }
-            
+
             $sql = "DELETE FROM " . model('Base')->model->pre . "booking_goods  WHERE " . db_create_in($col, 'user_id'); // 删除用户
             model('Base')->model->query($sql);
             $sql = "DELETE FROM " . model('Base')->model->pre . "collect_goods  WHERE " . db_create_in($col, 'user_id'); // 删除会员收藏商品
@@ -565,19 +565,19 @@ class ucenter extends integrate
             $sql = "DELETE FROM " . model('Base')->model->pre . "account_log  WHERE " . db_create_in($col, 'user_id'); // 删除用户日志
             model('Base')->model->query($sql);
         }
-        
+
         if (isset($this->ecshop) && $this->ecshop) {
             /* 如果是ecshop插件直接退出 */
             return;
         }
-        
+
         $sql = "DELETE FROM " . model('Base')->model->pre . "users  WHERE ";
         if (is_array($post_id)) {
             $sql .= db_create_in($post_id, 'user_name');
         } else {
             $sql .= "user_name='" . $post_id . "' LIMIT 1";
         }
-        
+
         model('Base')->model->query($sql);
     }
 
@@ -585,7 +585,7 @@ class ucenter extends integrate
      * 获取论坛有效积分及单位
      *
      * @access public
-     * @param            
+     * @param
      *
      *
      *
@@ -599,7 +599,7 @@ class ucenter extends integrate
     /**
      * 返回getOne的数据
      *
-     * @param unknown $array            
+     * @param unknown $array
      * @return mixed
      */
     function getOne($array)
