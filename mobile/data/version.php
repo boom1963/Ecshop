@@ -2,4 +2,4 @@
 define('APPNAME', 'ECTouch');
 define('VERSION', '1.0');
 define('RELEASE', '20141218');
-define('ECTOUCH_AUTH_KEY', '0B03E447CB453E8F7FD7A95C0C2A192D');
+define('ECTOUCH_AUTH_KEY', '');

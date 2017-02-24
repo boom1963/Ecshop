@@ -144,7 +144,7 @@ body {
   </li>
 <?php endif; ?>
 <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
-  <script language="JavaScript" src="http://api.ecshop.com/menu_ext.php?charset=<?php echo $this->_var['charset']; ?>&lang=<?php echo $this->_var['help_lang']; ?>"></script>
+  <!-- script language="JavaScript" src="http://api.ecshop.com/menu_ext.php?charset=<?php echo $this->_var['charset']; ?>&lang=<?php echo $this->_var['help_lang']; ?>"></script -->
 </ul>
 </div>
 <div id="help-div" style="display:none">
@@ -409,7 +409,7 @@ Object.extend(ToggleHanlder ,{
 ToggleHanlder.CookieName += "_<?php echo $this->_var['admin_id']; ?>";
 //初始化菜单状态
 ToggleHanlder.Load();
-Ajax.call('cloud.php?is_ajax=1&act=menu_api','', start_menu_api, 'GET', 'JSON');
+//Ajax.call('cloud.php?is_ajax=1&act=menu_api','', start_menu_api, 'GET', 'JSON');
 function start_menu_api(result)
 {
       if(result.content==0)
@@ -418,7 +418,7 @@ function start_menu_api(result)
       else
       {
           document.getElementById("menu-ul").innerHTML = document.getElementById("menu-ul").innerHTML + result.content;
-      }   
+      }
 }
 //-->
 </script>

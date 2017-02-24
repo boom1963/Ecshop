@@ -13,6 +13,7 @@
  * $Id: cloud.php 17063 2011-07-25 06:35:46Z liubo $
 */
 
+/*
 define('IN_ECS', true);
 
 require(dirname(__FILE__) . '/includes/init.php');
@@ -84,7 +85,7 @@ if($act =='menu_api')
             make_json_result('0');
         }
     }
-    else 
+    else
     {
         make_json_result($api_data['content']);
     }
@@ -92,7 +93,7 @@ if($act =='menu_api')
 elseif($act == 'cloud_remind')
 {
     $api_data = read_static_cache('cloud_remind');
-    
+
     if($api_data === false || (isset($api_data['api_time']) && $api_data['api_time']<date('Ymd')) )
     {
         $t = new transport('-1',5);
@@ -228,5 +229,5 @@ else
     ecs_header("Location: http://cloud.ecshop.com/api.php?act=".$act.$query."\n");
     exit();
 }
-
+*/
 ?>

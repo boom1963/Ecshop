@@ -45,7 +45,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['is_online']  = '1';
 
     /* 作者 */
-    $modules[$i]['author']  = 'BBBank Team';
+    $modules[$i]['author']  = 'ECSHOP TEAM';
 
     /* 网址 */
     $modules[$i]['website'] ='http://www.95epay.cn/merRegister.jsp?countermanName=%E5%BC%A0%E4%BF%8A%E8%BE%89&countermanPhoneNO=13113391311&countermanQQ=2361064531';
@@ -80,7 +80,7 @@ class epay
     {
         $this->epay();
     }//upgrade for 5.6
-
+	 
     function epay()
     {
     }
@@ -104,18 +104,18 @@ class epay
         $parameter['MerNo']=$payment['epay_account'];
         $parameter['MD5key']=$payment['epay_key'];
 
-
+	
         $parameter['Amount']= $order['order_amount'];
         $parameter['BillNo']= time().str_pad($order['log_id'], 10, "0", STR_PAD_LEFT);
         $parameter['ReturnURL'] = $GLOBALS['ecs']->url() . 'respond.php';
         $parameter['NotifyURL'] = $GLOBALS['ecs']->url() . 'respond.php';
         $parameter['PaymentType']= "";
-        $parameter['PayType']= "CSPAY";//CSPAY:网银支付;
+        $parameter['PayType']= "CSPAY";//CSPAY:网银支付; 
 
         $sign_params  = array(
             'MerNo'       => $parameter['MerNo'],
-            'BillNo'       => $parameter['BillNo'],
-            'Amount'         => $parameter['Amount'],
+            'BillNo'       => $parameter['BillNo'], 
+            'Amount'         => $parameter['Amount'],   
             'ReturnURL'       => $parameter['ReturnURL'],
         );
         $sign_str = "";
@@ -123,7 +123,7 @@ class epay
 
         foreach ($sign_params as $key => $val)
         {
-
+                                   
              $sign_str .= sprintf("%s=%s&", $key, $val);
         }
         $parameter['MD5info']= strtoupper(md5($sign_str. strtoupper(md5($parameter['MD5key']))));
@@ -148,7 +148,7 @@ class epay
         $md5sign         ='';
         $BillNo          =     $_POST["BillNo"];
         $Amount          =     $_POST["Amount"];
-        $Succeed         =     $_POST["Succeed"];
+        $Succeed         =     $_POST["Succeed"];     
         $MD5info         =     $_POST["MD5info"];
         $Result          =     $_POST["Result"];
         $MerNo           =     $_POST['MerNo'];
@@ -156,18 +156,18 @@ class epay
         $MerRemark       =     $_POST['MerRemark'];		//自定义信息返回
         $sign_params  = array(
         'MerNo'         => $MerNo,
-        'BillNo'        => $BillNo,
-        'Amount'        => $Amount,
+        'BillNo'        => $BillNo, 
+        'Amount'        => $Amount,   
         'Succeed'       => $Succeed
             );
-
+         
         $sign_str = "";
         ksort($sign_params);
-        foreach ($sign_params as $key => $val) {
-            $sign_str .= sprintf("%s=%s&", $key, $val);
+        foreach ($sign_params as $key => $val) {              
+            $sign_str .= sprintf("%s=%s&", $key, $val);    
         }
-       $md5sign= strtoupper(md5($sign_str. strtoupper(md5($MD5key))));
-
+       $md5sign= strtoupper(md5($sign_str. strtoupper(md5($MD5key)))); 
+         
        if($md5sign==$MD5info && $Succeed!='88')
        {
            return false;

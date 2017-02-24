@@ -4,12 +4,12 @@
   <div class="bNavList clearfix">
    <div class="f_l">
    <?php if ($this->_var['navigator_list']['bottom']): ?>
-   <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
+   <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_29254500_1487821280');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav']):
+    foreach ($_from AS $this->_var['nav_0_29254500_1487821280']):
         $this->_foreach['nav_bottom_list']['iteration']++;
 ?>
-        <a href="<?php echo $this->_var['nav']['url']; ?>" <?php if ($this->_var['nav']['opennew'] == 1): ?> target="_blank" <?php endif; ?>><?php echo $this->_var['nav']['name']; ?></a>
+        <a href="<?php echo $this->_var['nav_0_29254500_1487821280']['url']; ?>" <?php if ($this->_var['nav_0_29254500_1487821280']['opennew'] == 1): ?> target="_blank" <?php endif; ?>><?php echo $this->_var['nav_0_29254500_1487821280']['name']; ?></a>
         <?php if (! ($this->_foreach['nav_bottom_list']['iteration'] == $this->_foreach['nav_bottom_list']['total'])): ?>
            -
         <?php endif; ?>
@@ -79,12 +79,12 @@ $k = array (
 );
 echo $this->_echash . $k['name'] . '|' . serialize($k) . $this->_echash;
 ?><br />
-  <!--<?php $_from = $this->_var['lang']['p_y']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'pv');if (count($_from)):
+  <!-- <?php $_from = $this->_var['lang']['p_y']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'pv');if (count($_from)):
     foreach ($_from AS $this->_var['pv']):
-?><?php echo $this->_var['pv']; ?><?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?><?php echo $this->_var['licensed']; ?><br />
+?><?php echo $this->_var['pv']; ?><?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?><?php echo $this->_var['licensed']; ?><br /> -->
     <?php if ($this->_var['stats_code']): ?>
     <div align="left"><?php echo $this->_var['stats_code']; ?></div>
-    <?php endif; ?> -->
+    <?php endif; ?>
     <div align="left"  id="rss"><a href="<?php echo $this->_var['feed_url']; ?>"><img src="themes/default/images/xml_rss2.gif" alt="rss" /></a></div>
  </div>
 </div>

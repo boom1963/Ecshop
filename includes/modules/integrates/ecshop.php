@@ -36,7 +36,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['author']  = 'BBBank Team';
 
     /* 插件作者的官方网站 */
-    $modules[$i]['website'] = '';
+    $modules[$i]['website'] = 'http://www.ecshop.com';
 
     return;
 }

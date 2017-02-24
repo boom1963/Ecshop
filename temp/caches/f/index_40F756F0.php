@@ -1,15 +1,14 @@
-<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:47:"C:/xampp/htdocs/ecshop/themes/default/index.dwt";i:1;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/page_header.lbi";i:2;s:54:"C:/xampp/htdocs/ecshop/themes/default/library/cart.lbi";i:3;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/category_tree.lbi";i:4;s:55:"C:/xampp/htdocs/ecshop/themes/default/library/top10.lbi";i:5;s:64:"C:/xampp/htdocs/ecshop/themes/default/library/promotion_info.lbi";i:6;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/order_query.lbi";i:7;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/invoice_query.lbi";i:8;s:59:"C:/xampp/htdocs/ecshop/themes/default/library/vote_list.lbi";i:9;s:60:"C:/xampp/htdocs/ecshop/themes/default/library/email_list.lbi";i:10;s:58:"C:/xampp/htdocs/ecshop/themes/default/library/index_ad.lbi";i:11;s:62:"C:/xampp/htdocs/ecshop/themes/default/library/new_articles.lbi";i:12;s:69:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_promotion.lbi";i:13;s:56:"C:/xampp/htdocs/ecshop/themes/default/library/brands.lbi";i:14;s:64:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_best.lbi";i:15;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_new.lbi";i:16;s:63:"C:/xampp/htdocs/ecshop/themes/default/library/recommend_hot.lbi";i:17;s:57:"C:/xampp/htdocs/ecshop/themes/default/library/auction.lbi";i:18;s:59:"C:/xampp/htdocs/ecshop/themes/default/library/group_buy.lbi";i:19;s:54:"C:/xampp/htdocs/ecshop/themes/default/library/help.lbi";i:20;s:61:"C:/xampp/htdocs/ecshop/themes/default/library/page_footer.lbi";}s:7:"expires";i:1487829782;s:8:"maketime";i:1487826182;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php exit;?>a:3:{s:8:"template";a:21:{i:0;s:53:"C:/xampp/htdocs/EcshopBackup/themes/default/index.dwt";i:1;s:67:"C:/xampp/htdocs/EcshopBackup/themes/default/library/page_header.lbi";i:2;s:60:"C:/xampp/htdocs/EcshopBackup/themes/default/library/cart.lbi";i:3;s:69:"C:/xampp/htdocs/EcshopBackup/themes/default/library/category_tree.lbi";i:4;s:61:"C:/xampp/htdocs/EcshopBackup/themes/default/library/top10.lbi";i:5;s:70:"C:/xampp/htdocs/EcshopBackup/themes/default/library/promotion_info.lbi";i:6;s:67:"C:/xampp/htdocs/EcshopBackup/themes/default/library/order_query.lbi";i:7;s:69:"C:/xampp/htdocs/EcshopBackup/themes/default/library/invoice_query.lbi";i:8;s:65:"C:/xampp/htdocs/EcshopBackup/themes/default/library/vote_list.lbi";i:9;s:66:"C:/xampp/htdocs/EcshopBackup/themes/default/library/email_list.lbi";i:10;s:64:"C:/xampp/htdocs/EcshopBackup/themes/default/library/index_ad.lbi";i:11;s:68:"C:/xampp/htdocs/EcshopBackup/themes/default/library/new_articles.lbi";i:12;s:75:"C:/xampp/htdocs/EcshopBackup/themes/default/library/recommend_promotion.lbi";i:13;s:62:"C:/xampp/htdocs/EcshopBackup/themes/default/library/brands.lbi";i:14;s:70:"C:/xampp/htdocs/EcshopBackup/themes/default/library/recommend_best.lbi";i:15;s:69:"C:/xampp/htdocs/EcshopBackup/themes/default/library/recommend_new.lbi";i:16;s:69:"C:/xampp/htdocs/EcshopBackup/themes/default/library/recommend_hot.lbi";i:17;s:63:"C:/xampp/htdocs/EcshopBackup/themes/default/library/auction.lbi";i:18;s:65:"C:/xampp/htdocs/EcshopBackup/themes/default/library/group_buy.lbi";i:19;s:60:"C:/xampp/htdocs/EcshopBackup/themes/default/library/help.lbi";i:20;s:67:"C:/xampp/htdocs/EcshopBackup/themes/default/library/page_footer.lbi";}s:7:"expires";i:1487917095;s:8:"maketime";i:1487913495;}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="Generator" content="ECSHOP v2.7.3" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="Keywords" content="商店关键字" />
-<meta name="Description" content="商店描述" />
-<title>商店标题 - Powered by</title>
+<meta name="Keywords" content="ECSHOP演示站" />
+<meta name="Description" content="ECSHOP演示站" />
+<title>ECSHOP演示站  </title>
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="icon" href="animated_favicon.gif" type="image/gif" />
 <link href="themes/default/style.css" rel="stylesheet" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS|商店标题 - Powered by" href="feed.php" />
+<link rel="alternate" type="application/rss+xml" title="RSS|ECSHOP演示站  " href="feed.php" />
 <script type="text/javascript" src="js/common.js"></script><script type="text/javascript" src="js/index.js"></script></head>
 <body>
 <script type="text/javascript">
@@ -196,58 +195,6 @@ function check_email()
     </div>
     <div class="blank5"></div>
    
-<div class="box">
-<div class="box_2 centerPadd">
-  <div class="itemTit" id="itemBest">
-        </div>
-  <div id="show_best_area" class="clearfix goodsBox">
-      <div class="goodsItem">
-         <span class="best"></span>
-           <a href="goods.php?id=1"><img src="images/201702/thumb_img/1_thumb_G_1487822570334.jpg" alt="MacBook Air" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=1" title="MacBook Air">MacBook...</a></p>
-           <font class="f1">
-                     ￥3457元                     </font>
-        </div>
-    <div class="more"><a href="search.php?intro=best"><img src="themes/default/images/more.gif" /></a></div>
-    </div>
-</div>
-</div>
-<div class="blank5"></div>
-  <div class="box">
-<div class="box_2 centerPadd">
-  <div class="itemTit New" id="itemNew">
-        </div>
-  <div id="show_new_area" class="clearfix goodsBox">
-      <div class="goodsItem">
-         <span class="news"></span>
-           <a href="goods.php?id=1"><img src="images/201702/thumb_img/1_thumb_G_1487822570334.jpg" alt="MacBook Air" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=1" title="MacBook Air">MacBook...</a></p>
-           <font class="f1">
-                     ￥3457元                     </font>
-        </div>
-    <div class="more"><a href="search.php?intro=new"><img src="themes/default/images/more.gif" /></a></div>
-    </div>
-</div>
-</div>
-<div class="blank5"></div>
-  <div class="box">
-<div class="box_2 centerPadd">
-  <div class="itemTit Hot" id="itemHot">
-        </div>
-  <div id="show_hot_area" class="clearfix goodsBox">
-      <div class="goodsItem">
-         <span class="hot"></span>
-           <a href="goods.php?id=1"><img src="images/201702/thumb_img/1_thumb_G_1487822570334.jpg" alt="MacBook Air" class="goodsimg" /></a><br />
-           <p><a href="goods.php?id=1" title="MacBook Air">MacBook...</a></p>
-           <font class="f1">
-                     ￥3457元                     </font>
-        </div>
-    <div class="more"><a href="search.php?intro=hot"><img src="themes/default/images/more.gif" /></a></div>
-    </div>
-</div>
-</div>
-<div class="blank5"></div>
-  
   </div>
   
 </div>
@@ -283,13 +230,12 @@ function check_email()
 <div class="blank"></div>
 <div id="footer">
  <div class="text">
- &copy; 2005-2017 商店名称 版权所有，并保留所有权利。<br />
+ &copy; 2005-2017 ECSHOP 版权所有，并保留所有权利。<br />
                                                                                      <br />
     554fcae493e564ee0dc75bdf2ebf94caquery_info|a:1:{s:4:"name";s:10:"query_info";}554fcae493e564ee0dc75bdf2ebf94ca<br />
-  <!--<a href="http://www.ecshop.com" target="_blank" style=" font-family:Verdana; font-size:11px;">Powered&nbsp;by&nbsp;<strong><span style="color: #3366FF">ECShop</span>&nbsp;<span style="color: #FF9966">v2.7.3</span></strong></a>&nbsp;<a href="http://www.ecshop.com/license.php?product=ecshop_b2c&url=http%3A%2F%2Flocalhost%3A8080%2Fecshop%2F" target="_blank"
->&nbsp;&nbsp;Licensed</a><br />
-     -->
-    <div align="left"  id="rss"><a href="feed.php"><img src="themes/default/images/xml_rss2.gif" alt="rss" /></a></div>
+  <!-- <a href="http://www.ecshop.com" target="_blank" style=" font-family:Verdana; font-size:11px;">Powered&nbsp;by&nbsp;<strong><span style="color: #3366FF">ECShop</span>&nbsp;<span style="color: #FF9966">v2.7.3</span></strong></a>&nbsp;<a href="http://www.ecshop.com/license.php?product=ecshop_b2c&url=http%3A%2F%2Flocalhost%3A8080%2FEcshopBackup%2F" target="_blank"
+>&nbsp;&nbsp;Licensed</a><br /> -->
+        <div align="left"  id="rss"><a href="feed.php"><img src="themes/default/images/xml_rss2.gif" alt="rss" /></a></div>
  </div>
 </div>
 </body>

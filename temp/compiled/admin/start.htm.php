@@ -2,7 +2,7 @@
 <?php echo $this->fetch('pageheader.htm'); ?>
 <!-- directory install start -->
 <ul id="cloud_list" style="padding:0; margin: 0; list-style-type:none; color: #CC0000;">
- 
+
 </ul>
 <script type="Text/Javascript" language="JavaScript">
 <!--
@@ -18,13 +18,13 @@
        {
          document.getElementById("cloud_list").innerHTML =result.content;
       }
-    } 
+    }
    function cloud_close(id)
     {
       Ajax.call('cloud.php?is_ajax=1&act=close_remind&remind_id='+id,'', cloud_api, 'GET', 'JSON');
     }
   //-->
- </script> 
+ </script>
 <ul id="lilist" style="padding:0; margin: 0; list-style-type:none; color: #CC0000;">
   <?php $_from = $this->_var['warning_arr']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'warning');if (count($_from)):
     foreach ($_from AS $this->_var['warning']):
@@ -235,7 +235,8 @@ onload = function()
   /* 检查订单 */
   startCheckOrder();
 }
-  Ajax.call('index.php?is_ajax=1&act=main_api','', start_api, 'GET', 'TEXT','FLASE');
+   /*隐藏最新补丁*/
+  //Ajax.call('index.php?is_ajax=1&act=main_api','', start_api, 'GET', 'TEXT','FLASE');
   //Ajax.call('cloud.php?is_ajax=1&act=cloud_remind','', cloud_api, 'GET', 'JSON');
    function start_api(result)
     {
@@ -249,10 +250,10 @@ onload = function()
         if(lis.length>1)
         {
           api_styel();
-        }      
+        }
       }
     }
- 
+
       function api_styel()
       {
         if(document.getElementById("Marquee") != null)
@@ -266,7 +267,7 @@ onload = function()
             {
               Mar.style.height = "36px";
             }
-            
+
             var child_div=Mar.getElementsByTagName("div");
 
         var picH = 16;//移动高度
@@ -274,7 +275,7 @@ onload = function()
         var scrolltime=30;//移动频度(毫秒)越大越慢
         var stoptime=4000;//间断时间(毫秒)
         var tmpH = 0;
-        
+
         function start()
         {
           if(tmpH < picH)

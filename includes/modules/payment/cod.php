@@ -48,10 +48,10 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['pay_fee'] = '0';
 
     /* 作者 */
-    $modules[$i]['author']  = 'BBBank Team';
+    $modules[$i]['author']  = 'ECSHOP TEAM';
 
     /* 网址 */
-    $modules[$i]['website'] = '';
+    $modules[$i]['website'] = 'http://www.ecshop.com';
 
     /* 版本号 */
     $modules[$i]['version'] = '1.0.0';
@@ -79,7 +79,7 @@ class cod
     {
         $this->cod();
     }//upgrade for 5.6
-
+	 
     function cod()
     {
     }
