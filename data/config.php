@@ -3,7 +3,7 @@
 $db_host   = "localhost:3306";
 
 // database name
-$db_name   = "mydata2";
+$db_name   = "mydata";
 
 // database username
 $db_user   = "root";
