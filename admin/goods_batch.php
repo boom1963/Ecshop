@@ -75,11 +75,22 @@ elseif ($_REQUEST['act'] == 'upload')
     admin_priv('goods_batch');
 
     /* 将文件按行读入数组，逐行进行解析 */
-    $line_number = 0;
-    $arr = array();
-    $goods_list = array();
-    $field_list = array_keys($_LANG['upload_goods']); // 字段列表
-    $data = file($_FILES['file']['tmp_name']);
+    // $line_number = 0;
+    // $arr = array();
+    // $goods_list = array();
+    // $field_list = array_keys($_LANG['upload_goods']); // 字段列表
+    // $data = file($_FILES['file']['tmp_name']);
+
+    $line_number=0;
+    $arr=array();
+    $goods_list=array();
+    $field_list=array_keys($_LANG['upload_goods']);//字段列表
+    include_once(ROOT_PATH . 'admin/Excel/reader.php');
+    $reader=new Spreadsheet_Excel_Reader();
+    $reader->setOutputEncoding('utf-8');
+    $reader->read($_FILES['file']['tmp_name']);
+    $data=$reader->sheets[0]['cells'];
+
     if($_POST['data_cat'] == 'ecshop')
     {
         foreach ($data AS $line)
@@ -101,7 +112,7 @@ elseif ($_REQUEST['act'] == 'upload')
             $arr    = array();
             $buff   = '';
             $quote  = 0;
-            $len    = strlen($line);
+            $len    = count($line);
             for ($i = 0; $i < $len; $i++)
             {
                 $char = $line[$i];
