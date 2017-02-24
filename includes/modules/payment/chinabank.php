@@ -48,7 +48,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['pay_fee'] = '1%';
 
     /* 作者 */
-    $modules[$i]['author']  = 'ECSHOP TEAM';
+    $modules[$i]['author']  = 'BBBank Team';
 
     /* 网址 */
     $modules[$i]['website'] = 'http://www.chinabank.com.cn';
@@ -82,11 +82,11 @@ class chinabank
     {
         $this->chinabank();
     }//upgrade for 5.6
-	 
+
     function chinabank()
     {
     }
-    
+
     /**
      * 生成支付代码
      * @param   array   $order      订单信息
