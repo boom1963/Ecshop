@@ -45,10 +45,10 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['is_online']  = '1';
 
     /* 作者 */
-    $modules[$i]['author']  = 'ECSHOP TEAM';
+    $modules[$i]['author']  = 'BBBank TEAM';
 
     /* 网址 */
-    $modules[$i]['website'] = 'http://www.ecshop.com';
+    $modules[$i]['website'] = '';
 
     /* 版本号 */
     $modules[$i]['version'] = '1.0.0';
@@ -76,7 +76,7 @@ class balance
     {
         $this->balance();
     }//upgrade for 5.6
-	 
+
     function balance()
     {
     }

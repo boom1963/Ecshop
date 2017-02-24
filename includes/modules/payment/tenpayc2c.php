@@ -45,7 +45,7 @@ if (isset($set_modules) && $set_modules == TRUE)
     $modules[$i]['is_online']  = '1';
 
     /* 作者 */
-    $modules[$i]['author']  = 'ECSHOP TEAM';
+    $modules[$i]['author']  = 'BBBank TEAM';
 
     /* 网址 */
     $modules[$i]['website'] = 'http://www.tenpay.com';
@@ -80,8 +80,8 @@ class tenpayc2c
     {
         $this->tenpayc2c();
     }//upgrade for 5.6
-	
-	
+
+
     function tenpayc2c()
     {
     }
