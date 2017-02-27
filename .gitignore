@@ -1,3 +1,3 @@
-temp/
-temp/static_caches/
-temp/query_caches/
+#temp/
+#temp/static_caches/
+#temp/query_caches/
