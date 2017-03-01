@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id="admin_header">
-  <div id="admin_logo"><img src="__ASSETS__/images/topLogo.jpg" /></div>
+  <div id="admin_logo"><img style="max-height:45px; max-width:262px;" src="__ASSETS__/images/topLogo.jpg" /></div>
   <div id="submenu-div">
     <ul>
       <li><a href="{url('logout')}">{$lang['signout']}</a></li>
@@ -83,7 +83,7 @@
     </div>
   </div>
 </div>
-<div id="admin_bottom" style="text-align:center; line-height:30px">Copyright &copy; <?php echo date('Y');?> 上海商创网络科技有限公司. All Rights Reserved.</div>
+<div id="admin_bottom" style="text-align:center; line-height:30px">Copyright &copy; <?php echo date('Y');?> 内蒙古草本聚食品有限责任公司. All Rights Reserved.</div>
 <div style="clear:both"></div>
 <script src="__PUBLIC__/js/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
