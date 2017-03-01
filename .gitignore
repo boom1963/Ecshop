@@ -1,3 +1,5 @@
 temp/
 temp/static_caches/
 temp/query_caches/
+
+data/config.php

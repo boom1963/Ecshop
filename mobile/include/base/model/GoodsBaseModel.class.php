@@ -594,9 +594,19 @@ class GoodsBaseModel extends BaseModel {
      * 销量
      * @param unknown $goods_id
      * @return Ambigous <string, boolean>
-     */
+     
     function get_sales_count($goods_id) {
         return get_goods_count($goods_id);
-    }
+    }*/
+    
+    /**
+* 更新销量
+* @param unknown $goods_id
+* @return Ambigous*/
+function get_sales_count($goods_id) {
+$sql = "select sum(goods_number) as sales_count from ".$this->model->pre."order_goods where goods_id = ".$goods_id;
+$sales_count = M()->getRow($sql);
+return $sales_count['sales_count'];
+}
 
 }
