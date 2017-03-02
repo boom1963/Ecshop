@@ -3,3 +3,4 @@ temp/static_caches/
 temp/query_caches/
 
 data/config.php
+mobile/data/config.php
