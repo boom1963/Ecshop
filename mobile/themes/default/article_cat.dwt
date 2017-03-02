@@ -28,13 +28,13 @@
       <!-- {foreach from=$artciles_list item=article name="artciles_list"} -->
       <li><a href="{$article.url}"> <span class="num">{$smarty.foreach.artciles_list.iteration}</span>{$article.short_title}
         </a> </li>
-      <!-- {/foreach} --> 
+      <!-- {/foreach} -->
       <!-- #BeginLibraryItem "/library/pages.lbi" --><!-- #EndLibraryItem -->
     </ol>
   </div>
-  <!-- {/if} --> 
+  <!-- {/if} -->
   </div>
-    <footer class="logo"><a href="http://www.ectouch.cn" title="ECTouch官网" target="_blank"><img src="__TPL__/images/copyright.png" width="176" height="60"></a></footer>
+    <footer class="logo"><a href="http://www.cbjspgs.com" title="草本聚官网" target="_blank"><img src="__TPL__/images/copyright.png" width="176" height="60"></a></footer>
 </div>
 <!-- #BeginLibraryItem "/library/search.lbi" --><!-- #EndLibraryItem -->
 </body></html>
