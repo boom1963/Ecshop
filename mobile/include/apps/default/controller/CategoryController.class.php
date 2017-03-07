@@ -539,6 +539,7 @@ class CategoryController extends CommonController {
             $sales_volume = (int) $row['sales_volume'];
             if (mt_rand(0, 3) == 3){
                 $sales_volume = model('GoodsBase')->get_sales_count($row['goods_id']);
+                $sales_volume = $sales_volume == "" ? 0 : $sales_volume; // 加个判断，不然会出错强制退出
                 $sql = 'REPLACE INTO ' . $this->model->pre . 'touch_goods(`goods_id`, `sales_volume`) VALUES('. $row['goods_id'] .', '.$sales_volume.')';
                 $this->model->query($sql);
             }
