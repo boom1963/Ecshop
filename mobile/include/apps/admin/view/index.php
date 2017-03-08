@@ -14,12 +14,12 @@
   <div id="submenu-div">
     <ul>
       <li><a href="{url('logout')}">{$lang['signout']}</a></li>
-      <li><a href="http://bbs.ecmoban.com" target="_blank">{$lang['help']}</a></li>
+      <!--li><a href="http://bbs.ecmoban.com" target="_blank">{$lang['help']}</a></li-->
       <li><a href="{url('clearCache')}" target="mainFrame">{$lang['clear_cache']}</a></li>
       <li><a href="{url('demo')}" target="mainFrame">{$lang['preview']}</a></li>
       <li><a href="{url('modify')}" target="mainFrame">{$lang['profile']}</a></li>
       <li><a href="javascript:window.top.frames['mainFrame'].document.location.reload();">{$lang['refresh']}</a></li>
-      <li style="border-left:none"><a href="{url('aboutus')}" target="mainFrame">{$lang['about']}</a></li>
+      <!--li style="border-left:none"><a href="{url('aboutus')}" target="mainFrame">{$lang['about']}</a></li-->
     </ul>
   </div>
 </div>

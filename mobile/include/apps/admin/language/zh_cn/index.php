@@ -33,10 +33,10 @@ $_LANG['send_email_error'] = '电子邮件发送错误，请联系管理员';
 
 $_LANG['shop_guide'] = '开店向导';
 $_LANG['set_navigator'] = '设置导航栏';
-$_LANG['about'] = '关于程序';
+//$_LANG['about'] = '关于程序';
 $_LANG['preview'] = '查看网店';
 $_LANG['menu'] = '菜单';
-$_LANG['help'] = '帮助中心';
+//$_LANG['help'] = '帮助中心';
 $_LANG['signout'] = '退出';
 $_LANG['profile'] = '个人设置';
 $_LANG['view_message'] = '管理员留言';
