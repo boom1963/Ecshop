@@ -43,7 +43,7 @@
       </ul>
     </dd>
   </dl>
-  <dl>
+  <!-- <dl>
     <dt class="menu_title">模板插件</dt>
     <dd>
       <ul>
@@ -52,7 +52,7 @@
         <li><a href="{url('authorization/index')}" target="mainFrame">快捷登录</a></li>
       </ul>
     </dd>
-  </dl>
+  </dl> -->
   <dl>
     <dt class="menu_title">广告促销</dt>
     <dd>
