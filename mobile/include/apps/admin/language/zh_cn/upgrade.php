@@ -15,7 +15,7 @@
 $_LANG['operation'] = '操作';
 $_LANG['view'] = '查看';
 $_LANG['access'] = '访问';
-$_LANG['upgrade'] = '在线升级';
+//$_LANG['upgrade'] = '在线升级';
 $_LANG['checkfile'] = '文件校验';
 $_LANG['updatetime'] = '更新日期';
 $_LANG['updatelist'] = '可升级版本列表';
