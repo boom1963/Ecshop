@@ -115,7 +115,7 @@ class IndexController extends Controller {
         $this->set_config($configDb);
         $this->msg('安装成功！', true);
     }
-	
+
     /**
      * 安装成功
      */
@@ -127,12 +127,12 @@ class IndexController extends Controller {
         @file_put_contents($config_file, $content);
         @fopen($this->lockFile, 'w');
         if (ECTOUCH_AUTH_KEY == '') {
-            $site_info = site_info($appid);
-            $this->cloud->data($site_info)->act('post.install');
+            // $site_info = site_info($appid);
+            // $this->cloud->data($site_info)->act('post.install');
         }
         //生成二维码
         $mobile_url = __URL__; //二维码内容
-        $errorCorrectionLevel = 'L'; // 纠错级别：L、M、Q、H 
+        $errorCorrectionLevel = 'L'; // 纠错级别：L、M、Q、H
         $matrixPointSize = 7; // 点的大小：1到10
         $mobile_qr = 'data/cache/demo_qrcode.png';
         QRcode::png($mobile_url, ROOT_PATH . $mobile_qr, $errorCorrectionLevel, $matrixPointSize, 2);
@@ -180,7 +180,7 @@ class IndexController extends Controller {
             return false;
         }
     }
-    
+
     /**
      * 生成为一的appid
      */

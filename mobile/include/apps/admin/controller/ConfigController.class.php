@@ -95,7 +95,7 @@ class ConfigController extends AdminController {
                         $info = get_template_info(C('template'));
                         $info['logo'] = empty($info['logo']) ? 'logo.png' : $info['logo'];
                         $file_name = str_replace('{$template}', C('template'), $file_var_list[$code]['store_dir']) . $info['logo'];
-                        
+
                     } elseif ($code == 'watermark') {
                         $name = explode('.', $file['name']);
                         $ext = array_pop($name);
@@ -145,9 +145,6 @@ class ConfigController extends AdminController {
 
         /* 清除缓存 */
         clear_all_files();
-        $site_info = site_info();
-        $this->cloud->data($site_info)->act('post.record');
-        $this->message(L('save_success'), url('index'));
     }
 
     /**
