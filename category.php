@@ -397,6 +397,12 @@ if (!$smarty->is_cached('category.dwt', $cache_id))
     assign_dynamic('category'); // 动态内容
 }
 
+/* 未登录处理 */
+if (empty($_SESSION['user_id']))
+{
+    ecs_header("Location: user.php");
+    exit;
+}
 $smarty->display('category.dwt', $cache_id);
 
 /*------------------------------------------------------ */

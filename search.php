@@ -104,6 +104,12 @@ if ($_REQUEST['act'] == 'advanced_search')
     $smarty->assign('action',     'form');
     $smarty->assign('use_storage', $_CFG['use_storage']);
 
+    /* 未登录处理 */
+    if (empty($_SESSION['user_id']))
+    {
+        ecs_header("Location: user.php");
+        exit;
+    }
     $smarty->display('search.dwt');
 
     exit;
@@ -511,7 +517,12 @@ else
     $smarty->assign('helps',       get_shop_help());      // 网店帮助
     $smarty->assign('top_goods',  get_top10());           // 销售排行
     $smarty->assign('promotion_info', get_promotion_info());
-
+    /* 未登录处理 */
+    if (empty($_SESSION['user_id']))
+    {
+        ecs_header("Location: user.php");
+        exit;
+    }
     $smarty->display('search.dwt');
 }
 

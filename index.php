@@ -158,6 +158,16 @@ if (!$smarty->is_cached('index.dwt', $cache_id))
     assign_dynamic('index');
 }
 
+//$user_id = $_SESSION['user_id'];
+
+
+/* 未登录处理 */
+if (empty($_SESSION['user_id']))
+{
+    ecs_header("Location: user.php");
+    exit;
+}
+
 $smarty->display('index.dwt', $cache_id);
 
 /*------------------------------------------------------ */
