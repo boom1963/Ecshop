@@ -18,13 +18,13 @@ defined('IN_ECTOUCH') or die('Deny Access');
 
 class IndexController extends AdminController
 {
-    
+
     // 管理中心
     public function index()
     {
         $this->display('index');
     }
-    
+
     // 欢迎页
     public function welcome()
     {
@@ -41,7 +41,7 @@ class IndexController extends AdminController
         $sys_info['safe_mode_gid'] = (boolean) ini_get('safe_mode_gid') ? L('yes') : L('no');
         $sys_info['timezone'] = function_exists("date_default_timezone_get") ? date_default_timezone_get() : L('no_timezone');
         $sys_info['socket'] = function_exists('fsockopen') ? L('yes') : L('no');
-        
+
         if ($gd == 0) {
             $sys_info['gd'] = 'N/A';
         } else {
@@ -50,49 +50,50 @@ class IndexController extends AdminController
             } else {
                 $sys_info['gd'] = 'GD2';
             }
-            
+
             $sys_info['gd'] .= ' (';
-            
+
             /* 检查系统支持的图片类型 */
             if ($gd && (imagetypes() & IMG_JPG) > 0) {
                 $sys_info['gd'] .= ' JPEG';
             }
-            
+
             if ($gd && (imagetypes() & IMG_GIF) > 0) {
                 $sys_info['gd'] .= ' GIF';
             }
-            
+
             if ($gd && (imagetypes() & IMG_PNG) > 0) {
                 $sys_info['gd'] .= ' PNG';
             }
-            
+
             $sys_info['gd'] .= ')';
         }
-        
+
         /* IP库版本 */
         $sys_info['ip_version'] = ecs_geoip('255.255.255.0');
-        
+
         /* 允许上传的最大文件大小 */
         $sys_info['max_filesize'] = ini_get('upload_max_filesize');
         $this->assign('sys_info', $sys_info);
-        
-        $this->assign('ecs_version', VERSION);
-        $this->assign('ecs_release', RELEASE);
-        $this->assign('ecs_charset', strtoupper(EC_CHARSET));
+
+        // $this->assign('ecs_version', VERSION);
+        // $this->assign('ecs_release', RELEASE);
+        // $this->assign('ecs_charset', strtoupper(EC_CHARSET));
         $this->assign('install_date', local_date(C('date_format'), C('install_date')));
         // 检测是否授权
-        $data = array('appid' => ECTOUCH_AUTH_KEY);
-        $empower = $this->cloud->data($data)->act('get.license');
-        $this->assign('empower', $empower);
+        // $data = array('appid' => ECTOUCH_AUTH_KEY);
+        // $empower = $this->cloud->data($data)->act('get.license');
+        // $this->assign('empower', $empower);
+        // 显示欢迎页
         $this->display('welcome');
     }
-    
+
     // 关于程序
     public function aboutus()
     {
         $this->display();
     }
-    
+
     // 查看网店
     public function demo()
     {
@@ -107,7 +108,7 @@ class IndexController extends AdminController
         $this->assign('ur_here', L('preview'));
         $this->display();
     }
-    
+
     // 登录页
     public function login()
     {
@@ -187,13 +188,13 @@ class IndexController extends AdminController
             $this->display('login');
         }
     }
-    
+
     // 退出登录
     public function logout()
     {
         $this->clearLogin(url('login'));
     }
-    
+
     // 找回密码
     public function forget()
     {
@@ -239,22 +240,22 @@ class IndexController extends AdminController
                 /* 生成验证的code */
                 $user_id = $userInfo['user_id'];
                 $token_code = md5($user_id . $userInfo['password']);
-                
+
                 /* 设置重置邮件模板所需要的内容信息 */
                 $template = model('Base')->get_mail_template('send_password');
                 $reset_url = __HOST__ . url('reset', array(
                     'uid' => $user_id,
                     'token' => $token_code
                 ));
-                
+
                 $this->assign('user_name', $username);
                 $this->assign('reset_email', $reset_url);
                 $this->assign('shop_name', C('shop_name'));
                 $this->assign('send_date', local_date(C('date_format')));
                 $this->assign('sent_date', local_date(C('date_format')));
-                
+
                 $content = $this->display('str:' . $template['template_content'], true, false);
-                
+
                 /* 发送确认重置密码的确认邮件 */
                 if (! send_mail($username, $email, $template['template_subject'], $content, $template['is_html'])) {
                     $result = array(
@@ -263,7 +264,7 @@ class IndexController extends AdminController
                     );
                     exit(json_encode($result));
                 }
-                
+
                 $result = array(
                     'err' => 1,
                     'msg' => 'send success'
@@ -284,20 +285,20 @@ class IndexController extends AdminController
             $this->display('forget');
         }
     }
-    
+
     // 生成验证码
     public function verify()
     {
         Image::buildImageVerify();
     }
-    
+
     // 更新缓存
     public function clearCache()
     {
         clear_all_files();
         $this->message(L('caches_cleared'));
     }
-    
+
     // 修改密码
     public function modify()
     {
@@ -379,29 +380,29 @@ class IndexController extends AdminController
      */
     public function license()
     {
-        if (IS_POST) {
-            $license = I('license');
-            // 数据验证
-            $msg = Check::rule(array(
-                array(
-                    Check::must($license),
-                    '授权码不能为空'
-                )
-            ));
-            // 提示信息
-            if ($msg !== true) {
-                $this->message($msg, NULL, 'error');
-            }
-            $data = array('license'=>$license, 'appid' => ECTOUCH_AUTH_KEY);
-            $result = $this->cloud->data($data)->act('post.dolicense');
-            if ($result['error'] > 0) {
-                $this->message($result['msg'], NULL, 'error');
-            } else {
-                $this->message('授权成功', NULL, 'success');
-            }
-        } else {
-            $this->assign('ur_here', L('empower'));
-            $this->display();
-        }
+        // if (IS_POST) {
+        //     $license = I('license');
+        //     // 数据验证
+        //     $msg = Check::rule(array(
+        //         array(
+        //             Check::must($license),
+        //             '授权码不能为空'
+        //         )
+        //     ));
+        //     // 提示信息
+        //     if ($msg !== true) {
+        //         $this->message($msg, NULL, 'error');
+        //     }
+        //     $data = array('license'=>$license, 'appid' => ECTOUCH_AUTH_KEY);
+        //     $result = $this->cloud->data($data)->act('post.dolicense');
+        //     if ($result['error'] > 0) {
+        //         $this->message($result['msg'], NULL, 'error');
+        //     } else {
+        //         $this->message('授权成功', NULL, 'success');
+        //     }
+        // } else {
+        //     $this->assign('ur_here', L('empower'));
+        //     $this->display();
+        // }
     }
 }
