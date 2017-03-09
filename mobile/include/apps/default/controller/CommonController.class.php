@@ -68,6 +68,14 @@ class CommonController extends BaseController
 
     protected function display($tpl = '', $cache_id = '', $return = false)
     {
+      // 未登入状态的话，强制进入登陆画面
+      if (empty($_SESSION['user_id']))
+      {
+        if($tpl!="user_login.dwt"){
+            $url="http://localhost:8080/ecshop/mobile/index.php?m=default&c=user&a=login&referer=http%253A%252F%252Flocalhost%253A8080%252Fecshop%252Fmobile%252Findex.php%253Fm%253Ddefault%2526c%253Duser";
+            echo "<a href='$url' style='font-size:60px'>点击重新登录</a>";exit;
+        }
+      }
         self::$view->display($tpl, $cache_id);
     }
 
