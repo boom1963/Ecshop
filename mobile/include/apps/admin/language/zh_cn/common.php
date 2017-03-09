@@ -23,7 +23,7 @@ $_LANG['gzip_enabled'] = '，Gzip 已启用';
 $_LANG['gzip_disabled'] = '，Gzip 已禁用';
 $_LANG['loading'] = '正在处理您的请求...';
 $_LANG['js_languages']['process_request'] = '正在处理您的请求...';
-$_LANG['js_languages']['todolist_caption'] = '记事本';
+//$_LANG['js_languages']['todolist_caption'] = '记事本';
 $_LANG['js_languages']['todolist_autosave'] = '自动保存';
 $_LANG['js_languages']['todolist_save'] = '保存';
 $_LANG['js_languages']['todolist_clear'] = '清除';
@@ -91,7 +91,7 @@ $_LANG['refresh'] = '刷新';
 $_LANG['update_sort'] = '更新排序';
 $_LANG['modify_failure'] = '修改失败!';
 $_LANG['attradd_succed'] = '操作成功!';
-$_LANG['todolist'] = '记事本';
+//$_LANG['todolist'] = '记事本';
 $_LANG['n_a'] = 'N/A';
 
 /* 提示 */
