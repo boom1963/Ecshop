@@ -11,18 +11,18 @@
 	opacity: 0.6;
 }
 </style>
-<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js" ></script> 
-<script type="text/javascript" src="__PUBLIC__/js/jquery.json.js" ></script> 
-<script type="text/javascript" src="__PUBLIC__/js/common.js"></script> 
-<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script> 
-<script type="text/javascript" src="__PUBLIC__/js/utils.js" ></script> 
-<script src="__TPL__/js/TouchSlide.1.1.js"></script> 
-<script src="__TPL__/js/ectouch.js"></script> 
-<script src="__TPL__/js/simple-inheritance.min.js"></script> 
-<script src="__TPL__/js/code-photoswipe-1.0.11.min.js"></script> 
-<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script> 
-<script src="__TPL__/js/jquery.scrollUp.min.js"></script> 
-<script type="text/javascript" src="__PUBLIC__/js/validform.js" ></script> 
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.json.js" ></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.more.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/utils.js" ></script>
+<script src="__TPL__/js/TouchSlide.1.1.js"></script>
+<script src="__TPL__/js/ectouch.js"></script>
+<script src="__TPL__/js/simple-inheritance.min.js"></script>
+<script src="__TPL__/js/code-photoswipe-1.0.11.min.js"></script>
+<script src="__PUBLIC__/bootstrap/js/bootstrap.min.js"></script>
+<script src="__TPL__/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/validform.js" ></script>
 <script language="javascript">
 	/*banner滚动图片*/
 		TouchSlide({
@@ -50,13 +50,13 @@
 		}
 	}
 
-	//如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
-	window.onresize = function () {
-	    if (h != window.innerHeight||w!=window.innerWidth){
-	        window.close();
-	        window.location = "about:blank";
-	    }
-	}
+	// //如果用户在工具栏调起开发者工具，那么判断浏览器的可视高度和可视宽度是否有改变，如有改变则关闭本页面
+	// window.onresize = function () {
+	//     if (h != window.innerHeight||w!=window.innerWidth){
+	//         window.close();
+	//         window.location = "about:blank";
+	//     }
+	// }
 
 	var h = window.innerHeight,w=window.innerWidth;
 //禁用右键 （防止右键查看源代码）
